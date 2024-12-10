@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
+import photo from './assets/DSC00045.JPG';
 
-function photography() {
+function Photography() {
   return (
     <>
-    <h1>Photography</h1>
-    <img src='./assets/DSC00045.JPG'/>
+      <h1>Photography</h1>
+      <img className='Mainpic' src={photo} alt='A beautiful photograph' />
     </>
-  )
+  );
 }
 
-export default photography
+export default Photography;

@@ -1,0 +1,46 @@
+/* General footer styling */
+.footer {
+    background-color: #333; /* Dark background for professional look */
+    color: #f2f2f2; /* Light text color for contrast */
+    text-align: center;
+    padding: 20px 10px;
+    font-family: 'Arial', sans-serif;
+    border-top: 2px solid #444;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Styling for text */
+  .footer-content p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Social icons container */
+  .social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+  }
+  
+  /* Icon links styling */
+  .social-icons a {
+    color: #f2f2f2;
+    font-size: 20px; /* Icon size */
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #c4e510; /* Highlight color on hover */
+  }
+  
+  .social-icons a:active {
+    transform: scale(0.9); /* Slight shrinking effect on click */
+  }
+  

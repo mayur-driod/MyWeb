@@ -1,10 +1,11 @@
 import React from 'react'
+import photo from './assets/DSC00239.jpg'
 
 function software() {
   return (
     <>
     <h1>Software</h1>
-    <img src="./assets/DSC00045.JPG"/>
+    <img className='Mainpic' src={photo}/>
     </>
   )
 }

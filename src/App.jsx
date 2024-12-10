@@ -3,6 +3,8 @@ import './App.css';
 import Photography from './Photography';
 import Software from './Software';
 import NavBar from './Components/NavBar';
+import Footer from './Components/Footer';
+import Toggle from './Components/Toggle';
 
 function App() {
   const [checked, setCheck] = useState(false);
@@ -18,17 +20,17 @@ function App() {
   return (
     <>
     <NavBar/>
-      sup
       <br />
-
-      <label className="switch">
-        <input type="checkbox" checked={checked} onChange={() => setCheck((prev) => !prev)} />
-        <span className="slider round"></span>
-      </label>
-
       <hr />
+      
+      <Toggle 
+      checked={checked}
+      onChange={() => setCheck((prev) => !prev)}
+      />
 
       {handleModule()}
+
+      <Footer/>
     </>
   );
 }
