@@ -1,0 +1,35 @@
+.Mainpic{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.Maindiv{
+    margin: 50px;
+    width: 80rem;
+    height: 60rem;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.profileDiv{
+    margin-left: 50px;
+    background-color: rgba(50,50,50,0.7);
+    height: 20rem;
+    width: 15rem;
+    border-radius: 5px;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 100px;
+        width: 100px;
+        border: 3px white solid;
+
+    }
+}
