@@ -6,6 +6,7 @@ import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 import Toggle from './Components/Toggle';
 import mainPhoto from './assets/main pic redo.png'
+import Contact from './Components/Contact';
 
 function App() {
   const [checked, setCheck] = useState(false);
@@ -30,6 +31,10 @@ function App() {
       
 
       {handleModule()}
+
+      <hr />
+      <Contact/>
+      <hr />
 
       <Footer/>
     </>
