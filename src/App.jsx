@@ -5,6 +5,7 @@ import Software from './Software';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 import Toggle from './Components/Toggle';
+import mainPhoto from './assets/Main pic.png'
 
 function App() {
   const [checked, setCheck] = useState(false);
@@ -20,13 +21,13 @@ function App() {
   return (
     <>
     <NavBar/>
-      <br />
-      <hr />
+      <div className='Choose' style={{ backgroundImage: `url(${mainPhoto})`}}>
+        <Toggle 
+        checked={checked}
+        onChange={() => setCheck((prev) => !prev)}
+        />
+      </div>
       
-      <Toggle 
-      checked={checked}
-      onChange={() => setCheck((prev) => !prev)}
-      />
 
       {handleModule()}
 

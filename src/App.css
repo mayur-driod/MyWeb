@@ -50,3 +50,19 @@ width: 500px;
 height: 500px;
 border-radius: 8px;
 }
+
+
+.Choose{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  height: 600px;
+  background-size: contain;
+  margin-top: 50px;
+  p{
+    font-size: 20px;
+    color: grey;
+  }
+}
