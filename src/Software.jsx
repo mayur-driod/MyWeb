@@ -11,10 +11,10 @@ function software() {
     <div className='Maindiv' style={{backgroundImage:`url(${photo})`}}>
     <h1>Software</h1>
       <div className='profileDiv'>
-        <h3>Hey I am Mayur</h3>
         <img src={profile} alt="" />
+        <h2>I am <strong>Mayur</strong></h2>
         <p>
-          I found my love for software and computers in the covid-19 pandemic
+          I'm a student at RVU x Kalvium persuing BCA in software product engineering!
         </p>
       </div>
     </div>

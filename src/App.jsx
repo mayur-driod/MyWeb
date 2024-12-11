@@ -5,7 +5,7 @@ import Software from './Software';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 import Toggle from './Components/Toggle';
-import mainPhoto from './assets/Main pic.png'
+import mainPhoto from './assets/main pic redo.png'
 
 function App() {
   const [checked, setCheck] = useState(false);
