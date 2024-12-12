@@ -31,7 +31,19 @@
         width: 200px;
         border: 3px white solid;
         margin-top: 40px;
-        margin-left: 40px;
-        align-self: flex-start;
+        margin-bottom: 40px;
+        /* margin-left: 40px; */
+        align-self: center;
     }
+}
+
+h2{
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
+
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }

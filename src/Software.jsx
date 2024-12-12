@@ -1,7 +1,8 @@
 import React from 'react'
 import photo from './assets/Laptop in classroom.jpg'
-import profile from './assets/IMG_3332~2.jpg'
+import Profilecard from './SoftwareComp/Profilecard'
 import './SP.css'
+import Skills from './SoftwareComp/Skills'
 
 function software() {
   return (
@@ -10,13 +11,8 @@ function software() {
     {/* <img className='Mainpic' src={photo}/> */}
     <div className='Maindiv' style={{backgroundImage:`url(${photo})`}}>
     <h1>Software</h1>
-      <div className='profileDiv'>
-        <img src={profile} alt="" />
-        <h2>I am <strong>Mayur</strong></h2>
-        <p>
-          I'm a student at RVU x Kalvium persuing BCA in software product engineering!
-        </p>
-      </div>
+      <Profilecard/>
+      <Skills/>
     </div>
     </>
   )
