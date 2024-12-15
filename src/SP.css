@@ -42,6 +42,12 @@ h2{
     font-size: 20pt;
 }
 
+h1{
+    background: -webkit-linear-gradient(#ae2ef9, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 p{
     margin-left: 20px;
     margin-right: 20px;

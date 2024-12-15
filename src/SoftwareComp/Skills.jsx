@@ -41,12 +41,12 @@ function Skills() {
             <img className='ot' src={davinci}/>
             <img className='ot' src={RPI}/> 
             <img className='ot' src={Cpp}/>
-            <img className='ot' src={linux}/>
+            <img className='ot' src={nodejs}/>
             <img className='ot' src={photoshop}/>
             <img className='ot' src={lightroom}/>
             <img className='ot' src={illustrator}/>
             <img className='ot' src={figma}/>
-            <img className='ot' src={nodejs}/>
+            <img className='ot' src={linux}/>
         </div>
     </div>
   )

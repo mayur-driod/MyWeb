@@ -7,6 +7,9 @@ import Footer from './Components/Footer';
 import Toggle from './Components/Toggle';
 import mainPhoto from './assets/main pic redo.png'
 import Contact from './Components/Contact';
+import About from './Components/About'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   const [checked, setCheck] = useState(false);
@@ -31,6 +34,10 @@ function App() {
       
 
       {handleModule()}
+
+      <hr/>
+
+      <About/>
 
       <hr />
       <Contact/>
