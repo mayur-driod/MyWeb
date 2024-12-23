@@ -5,6 +5,9 @@
   display: inline-block;
   width: 120px; /* Doubled from 60px */
   height: 68px; /* Doubled from 34px */
+  position: absolute;
+  top: 28rem;
+  left: 56rem;
 }
 
 .switch input { 

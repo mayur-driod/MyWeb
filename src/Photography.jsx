@@ -1,6 +1,6 @@
 import React from 'react';
 import photo from './assets/DSC00045.JPG';
-import './SP.css'
+import './photo.css'
 
 function Photography() {
   return (
