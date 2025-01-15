@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './App.css';
 import Photography from './Photography';
 import Software from './Software';
@@ -9,13 +9,16 @@ import mainPhoto from './assets/main pic redo.png'
 import Contact from './Components/Contact';
 import About from './Components/About'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { authcontext } from './context api/photoContext';
 
 
 function App() {
-  const [checked, setCheck] = useState(false);
+  
+  const {user,setUser}=useContext(authcontext)
+    console.log(setUser)
 
   const handleModule = () => {
-    if (checked) {
+    if (user) {
       return <Photography />;
     } else {
       return <Software />;
@@ -27,8 +30,8 @@ function App() {
     <NavBar/>
       <div className='Choose' style={{ backgroundImage: `url(${mainPhoto})`}}>
         <Toggle 
-        checked={checked}
-        onChange={() => setCheck((prev) => !prev)}
+        checked={user}
+        onChange={() => setUser((prev) => !prev)}
         />
       </div>
       

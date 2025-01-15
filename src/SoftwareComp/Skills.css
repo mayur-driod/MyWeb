@@ -1,60 +1,67 @@
 .MainDiv{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    margin-right: 50px;
-    margin-top: 125px;
-    background-color: rgba(50,50,50,0.7);
-    border-radius: 5px;
-    height: 40rem;
-    width: 35rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-right: 50px;
+  margin-top: 125px;
+  background-color: rgba(50,50,50,0.7);
+  border-radius: 5px;
+  height: 40rem;
+  width: 35rem;
 
-    h2{
-        font-size: 50px;
-        text-decoration: underline;
-    }
+  h2{
+      font-size: 50px;
+      text-decoration: underline;
+  }
+}
+
+.TopDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
 }
 
 
 .OtherSkills {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 15px; 
-    align-self: center;
-    margin-right: 32px;
-  }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 15px; 
+  align-self: center;
+  margin-right: 32px;
+}
 
- #skillpara{
-    font-size: 20px;
-    text-decoration: underline;
- }
+#skillpara{
+  font-size: 20px;
+  text-decoration: underline;
+}
 
 
 .top3{
-    width: 100px;
-    height: 100px;
-    margin-inline-start: 40px;
-    margin-bottom: 30px;
+  width: 100px;
+  height: 100px;
+  margin-inline-start: 40px;
+  margin-bottom: 30px;
 }
 
 .top3{
-    animation: spin 8s linear infinite;
-  }
-  
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+  animation: spin 8s linear infinite;
+}
 
-  .ot{
-        width: 50px;
-        height: 50px;
-        margin-inline-start: 40px;
-        margin-bottom: 40px;
-        border-radius: 0px;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ot{
+      width: 50px;
+      height: 50px;
+      margin-inline-start: 40px;
+      margin-bottom: 40px;
+      border-radius: 0px;
+}

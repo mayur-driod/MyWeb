@@ -52,17 +52,22 @@ border-radius: 8px;
 } */
 
 
-.Choose{
+.Choose {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100rem;
-  height: 70rem;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 15px;
-  p{
+
+  /* Make the container take the full viewport width and height */
+  width: 100vw; 
+  height: 100vh; 
+
+  /* Ensure the background image covers the entire container */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+
+  p {
     font-size: 20px;
     color: grey;
   }

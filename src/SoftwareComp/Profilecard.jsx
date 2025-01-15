@@ -8,7 +8,7 @@ function Profilecard() {
     <img src={profile} alt="" />
     <h2>I am <strong>Mayur</strong></h2>
     <p>
-      Hey folks! I am Mayur K Setty a dedicated student at RVU x Kalvium persuing my BCA (Hons) course in Software Product Engineering.
+      Hey folks! I am Mayur K Setty, a dedicated student at RVU x Kalvium pursuing my BCA (Hons) course in Software Product Engineering.
     </p>
     <button>Check out more!</button>
   </div>
