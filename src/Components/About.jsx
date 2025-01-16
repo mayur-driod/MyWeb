@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './abt.css';
 
 function About() {
   useEffect(() => {
@@ -18,16 +19,8 @@ function About() {
 
   return (
     <>
-      <h1>Hey, I am Mayur</h1>
-      <p>
-        I am Mayur and I have two main interests in life. First one is Software and Computers, 
-        while the other is Photography. I wanted to showcase my knowledge and skills in both 
-        these aspects, so I created this webpage. This webpage is designed in such a way that 
-        when you toggle the button to software, it shows everything about my journey with software 
-        and computers, and when I toggle it to Photography, it shows me everything about Photography.
-      </p>
-
       {/* LinkedIn Badge */}
+      <div id='badge'>
       <div
         className="badge-base LI-profile-badge"
         data-locale="en_US"
@@ -44,6 +37,20 @@ function About() {
           {/* Mayur K Setty */}
         </a>
       </div>
+
+      <div>
+      <h1>Hey, I am Mayur</h1>
+      <p>
+        I am Mayur and I have two main interests in life. First one is Software and Computers, 
+        while the other is Photography. I wanted to showcase my knowledge and skills in both 
+        these aspects, so I created this webpage. This webpage is designed in such a way that 
+        when you toggle the button to software, it shows everything about my journey with software 
+        and computers, and when I toggle it to Photography, it shows me everything about Photography.
+      </p>
+      </div>
+
+      </div>
+
     </>
   );
 }
