@@ -34,7 +34,6 @@ function App() {
         onChange={() => setUser((prev) => !prev)}
         />
       </div>
-      
 
       {handleModule()}
 
