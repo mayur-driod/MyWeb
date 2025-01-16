@@ -4,6 +4,7 @@ import './slider.css'; // Ensure the CSS for `switch` is imported
 function Toggle({ checked, onChange }) {
   return (
     <>
+    <div id='toggle'>
       <label className="switch">
         <input
           type="checkbox"
@@ -12,6 +13,7 @@ function Toggle({ checked, onChange }) {
         />
         <span className="slider round"></span>
       </label>
+      </div>
     </>
   );
 }
