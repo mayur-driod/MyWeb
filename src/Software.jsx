@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from './assets/Laptop in classroom.jpg'
+import photo from './assets/CS Background 2.0.png'
 import Profilecard from './SoftwareComp/Profilecard'
 import './SP.css'
 import Skills from './SoftwareComp/Skills'

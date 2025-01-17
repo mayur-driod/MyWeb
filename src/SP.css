@@ -5,10 +5,14 @@
 }
 
 .Maindiv{
-    margin: 50px;
-    width: 80rem;
-    height: 60rem;
-    background-size:cover;
+    margin-top: 50px;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+    left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -17,7 +21,7 @@
 
 .profileDiv{
     margin-left: 50px;
-    background-color: rgba(50,50,50,0.7);
+    background-color: rgba(50,50,50,0.75);
     height: 40rem;
     width: 35rem;
     border-radius: 5px;
