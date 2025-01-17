@@ -1,7 +1,45 @@
-#badge{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 1%;
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+h1 {
+  font-family: 'Jersey 15', sans-serif; 
+  text-align: left;
+  margin-left: 4%;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #FFF; /* Cursor */
+  width: 28; 
+  animation: none;
+}
+
+
+/*keyboard animation*/
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 27%; 
+  }
+}
+
+@keyframes blink {
+  from {
+    border-right-color: #FFF;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+p {
+  margin-left: 5%;
+  text-align: left;
+}
+
+#badge {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
 }
