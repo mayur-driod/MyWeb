@@ -32,6 +32,7 @@
 
 /* Heading */
 .contact-form-container h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   margin-bottom: 1rem;
   font-size: 1.8rem;
