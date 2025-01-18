@@ -13,7 +13,7 @@ function About() {
             // Add typewriter animation dynamically
             const element = entry.target;
             element.style.animation =
-              "typing 2s steps(40, end), blink 0.8s step-end 4s";
+              "typing 2s steps(40, end)", "blink 0.8s steps(40,end)";
           } else {
             // Reset animation when leaving the viewport
             const element = entry.target;
