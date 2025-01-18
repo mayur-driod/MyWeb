@@ -1,101 +1,119 @@
+/* Video Container */
+#video-container {
+  position: relative; /* Ensures it contains the video and form properly */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevents overflow issues with the video */
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire container */
+}
+
 /* Contact Form Container */
 .contact-form-container {
-    max-width: 500px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    border: 1px solid #3a3a3a;
-    border-radius: 8px;
-    background-color: #1e1e1e;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    font-family: Arial, sans-serif;
-    color: #ffffff;
+  position: relative; /* Keeps the form content above the video */
+  z-index: 1; /* Ensures the form is above the video */
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  background-color: rgba(30, 30, 30, 0.85); /* Adds slight transparency */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* Heading */
+.contact-form-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #bdbdbd;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs and Textareas */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #333333;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 5px #007BFF;
+}
+
+/* Textarea Specific */
+.form-group textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+/* Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #ae2ef9;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #7300b6;
+  box-shadow: 0 4px 10px rgba(120, 0, 189, 0.6);
+}
+
+button[type="submit"]:active {
+  background-color: #00408f;
+}
+
+/* Status Message */
+.contact-form-container p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #bdbdbd;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .contact-form-container {
+    padding: 1rem;
   }
-  
-  /* Heading */
-  .contact-form-container h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-    color: #ffffff;
-  }
-  
-  /* Form Group */
-  .form-group {
-    margin-bottom: 1rem;
-  }
-  
-  /* Labels */
-  .form-group label {
-    display: block;
-    font-size: 1rem;
-    color: #bdbdbd;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Inputs and Textareas */
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #3a3a3a;
-    border-radius: 4px;
-    font-size: 1rem;
-    color: #ffffff;
-    background-color: #333333;
-    box-sizing: border-box;
-  }
-  
-  .form-group input:focus,
-  .form-group textarea:focus {
-    outline: none;
-    border-color: #007BFF;
-    box-shadow: 0 0 5px #007BFF;
-  }
-  
-  /* Textarea Specific */
-  .form-group textarea {
-    resize: vertical;
-    height: 120px;
-  }
-  
-  /* Button */
+
   button[type="submit"] {
-    width: 100%;
-    padding: 0.8rem;
-    background-color: #ae2ef9;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 0.9rem;
   }
-  
-  button[type="submit"]:hover {
-    background-color: #7300b6;
-    box-shadow: 0 4px 10px rgba(120,0, 189, 0.6);
-  }
-  
-  button[type="submit"]:active {
-    background-color: #00408f;
-  }
-  
-  /* Status Message */
-  .contact-form-container p {
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 1rem;
-    color: #bdbdbd;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 600px) {
-    .contact-form-container {
-      padding: 1rem;
-    }
-  
-    button[type="submit"] {
-      font-size: 0.9rem;
-    }
-  }
-  
+}
