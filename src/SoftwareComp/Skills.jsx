@@ -24,13 +24,13 @@ import nodejs from '../assets/Node js.png'
 function Skills() {
   return (
     <div className='MainDiv'>
-        <h2>Top 3</h2>
+        <h2>My Skills</h2>
         <div className='TopDiv'>
             <img className='top3' src={Python}/>
             <img className='top3' src={react}/>
             <img className='top3' src={JS}/>
         </div>
-        <p id='skillpara'>Other Skills</p>
+        {/* <p id='skillpara'>Other Skills</p> */}<br/>
         <div className='OtherSkills'>
             <img className='ot' src={html}/>
             <img className='ot' src={css}/>
