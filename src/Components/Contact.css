@@ -24,7 +24,7 @@
   padding: 1.5rem;
   border: 1px solid #3a3a3a;
   border-radius: 8px;
-  background-color: rgba(30, 30, 30, 0.85); /* Adds slight transparency */
+  background-color: rgba(30, 30, 30, 0.7); /* Adds slight transparency */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   font-family: Arial, sans-serif;
   color: #ffffff;
@@ -60,15 +60,15 @@
   border-radius: 4px;
   font-size: 1rem;
   color: #ffffff;
-  background-color: #333333;
+  background-color: rgba(51, 51, 51,0.6);
   box-sizing: border-box;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #007BFF;
-  box-shadow: 0 0 5px #007BFF;
+  border-color: #ae2ef9;
+  box-shadow: 0 0 5px #ae2ef9;
 }
 
 /* Textarea Specific */
