@@ -8,5 +8,6 @@ export default defineConfig({
   build: {
     assetsInlineLimit: 0, // Ensures assets are not inlined
   },
+  base: "/MyWeb",
 })
 
