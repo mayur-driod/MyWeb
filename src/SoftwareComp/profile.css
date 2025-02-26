@@ -1,6 +1,7 @@
 .profileCard {
+    margin-top: 9vh;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
     height: 38rem;
     width: 30rem;
     border-radius: 15px;
@@ -18,6 +19,7 @@
 
 .profileCard:hover {
     transform: scale(1.05);
+    backdrop-filter: blur(10px);
 }
 
 .profileCard img {

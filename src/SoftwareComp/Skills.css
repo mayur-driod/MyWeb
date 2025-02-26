@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
 .MainDiv {
+    margin-top: 9vh;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
     height: 38rem;
     width: 30rem;
     border-radius: 15px;
@@ -17,6 +18,7 @@
 
 .MainDiv:hover {
   transform: scale(1.05) translateY(-5px); /* Slight pop-out effect */
+  backdrop-filter: blur(10px);
 }
 
 .MainDiv h2 {
