@@ -1,24 +1,29 @@
 import React from 'react';
 import './Nav.css';
 import { NavLink } from 'react-router-dom';
-import photo from '../assets/IMG_3332~2.jpg';
-
 
 function NavBar() {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 50, // Adjust for navbar height
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <div className="topnav">
-      <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet"></link>
       <nav>
-        <div id='mks'><h2>Mayur</h2></div>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/About">About Me</NavLink>
-        <NavLink to="/Projects">Projects</NavLink>
-        <NavLink to="/Experience">Experience</NavLink>
-        <NavLink to="/Intrests">Intrests</NavLink>
-        <NavLink to="/Education">Education</NavLink>
-        <NavLink to="/Contact">Contact</NavLink>
-        
-        {/* <img src={photo} alt="Profile" /> */}
+      <div id='mks'><h2>Mayur</h2></div>
+        <NavLink to="/" onClick={() => scrollToSection('home')}>Home</NavLink>
+        <NavLink to="/About" onClick={() => scrollToSection('about')}>About Me</NavLink>
+        <NavLink to="/Projects" onClick={() => scrollToSection('projects')}>Projects</NavLink>
+        <NavLink to="/Experience" onClick={() => scrollToSection('experience')}>Experience</NavLink>
+        <NavLink to="/Interests" onClick={() => scrollToSection('interests')}>Interests</NavLink>
+        <NavLink to="/Education" onClick={() => scrollToSection('education')}>Education</NavLink>
+        <NavLink to="/Contact" onClick={() => scrollToSection('contact')}>Contact</NavLink>
       </nav>
     </div>
   );

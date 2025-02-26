@@ -17,7 +17,7 @@
 }
 
 .MainDiv:hover {
-  transform: scale(1.05) translateY(-5px); /* Slight pop-out effect */
+  transform: scale(1.05) translateY(-5px); /*pop-out effect */
   backdrop-filter: blur(10px);
 }
 
