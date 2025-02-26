@@ -25,9 +25,13 @@ import fifteen from '../assets/Carousel/15.jpg';
 import sixteen from '../assets/Carousel/16.jpg';
 import seventeen from '../assets/Carousel/17.jpg';
 import eighteen from '../assets/Carousel/18.jpg';
-import ninteen from '../assets/Carousel/DSC00045.JPG';
-import twenty from '../assets/Carousel/DSC00239.jpg';
-import twentyone from '../assets/Carousel/Kite.jpg';
+import ninteen from '../assets/Carousel/19.jpg';
+import twenty from '../assets/Carousel/20.jpg';
+import twentyone from '../assets/Carousel/21.jpg';
+import twentytwo from '../assets/Carousel/22.JPG';
+import twentythree from '../assets/Carousel/23.JPG';
+import twentyfour from '../assets/Carousel/24.JPG';
+
 
 const settings = {
   centerMode: true,
@@ -43,7 +47,7 @@ const settings = {
 };
 
 export default function Carousel() {
-  const images = [one, two, three, four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,ninteen,twenty,twentyone];
+  const images = [one, two, three, four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,ninteen,twenty,twentyone,twentytwo,twentythree,twentyfour];
 
   return (
     <div style={{ width: "100%", maxWidth: "70vw", margin: "auto", position: "relative" }}>
