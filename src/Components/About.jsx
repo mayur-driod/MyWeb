@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useRef } from 'react';
 import "./abt.css";
+import LinkedInBadge from "./LinkedInBadge";
 
 function About() {
   const typewriterRef = useRef(null);
@@ -38,9 +39,14 @@ function About() {
     };
   }, []);
 
+  
+
   return (
     <>
-      <div>
+    <div className="maindiv">
+    <div>{/* <LinkedInBadge/> */}</div>
+
+      <div className="text">
         {/* Typewriter animation target */}
         <h1 ref={typewriterRef}>Hey, I am Mayur</h1>
         <p>
@@ -51,6 +57,7 @@ function About() {
           software and computers, and when I toggle it to Photography, it shows me everything
           about Photography.
         </p>
+      </div>
       </div>
     </>
   );
