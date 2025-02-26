@@ -30,6 +30,7 @@ import twenty from '../assets/Carousel/DSC00239.jpg';
 import twentyone from '../assets/Carousel/Kite.jpg';
 
 const settings = {
+  centerMode: true,
   arrows: true,
   fade: true,
   infinite: true,

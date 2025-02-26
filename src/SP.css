@@ -4,42 +4,29 @@
     border-radius: 5px;
 }
 
-.Maindiv{
+.Maindiv {
     margin-top: 50px;
     width: 100vw;
     height: 100vh;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    left: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
-.profileDiv{
-    margin-left: 50px;
-    background-color: rgba(50,50,50,0.75);
-    height: 40rem;
-    width: 35rem;
-    border-radius: 5px;
+.content-container {
     display: flex;
-    align-self: flex-start;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    img{
-        height: 200px;
-        width: 200px;
-        border: 3px white solid;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        /* margin-left: 40px; */
-        align-self: center;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
 }
+
+
 
 h2{
     margin-bottom: 10px;

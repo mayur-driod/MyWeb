@@ -1,21 +1,19 @@
-import React from 'react'
-import photo from './assets/CS Background 2.0.png'
-import Profilecard from './SoftwareComp/Profilecard'
-import './SP.css'
-import Skills from './SoftwareComp/Skills'
+import React from 'react';
+import photo from './assets/CS Background 2.0.png';
+import Profilecard from './SoftwareComp/Profilecard';
+import Skills from './SoftwareComp/Skills';
+import './SP.css';
 
-function software() {
+function Software() {
   return (
-    <>
-    
-    {/* <img className='Mainpic' src={photo}/> */}
-    <div className='Maindiv' style={{backgroundImage:`url(${photo})`}}>
-    <h1>Software</h1>
-      <Profilecard/>
-      <Skills/>
+    <div className='Maindiv' style={{ backgroundImage: `url(${photo})` }}>
+      <h1>Software</h1>
+      <div className="content-container">
+        <Profilecard />
+        <Skills />
+      </div>
     </div>
-    </>
-  )
+  );
 }
 
-export default software
+export default Software;

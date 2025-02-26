@@ -1,0 +1,66 @@
+.profileCard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    height: 38rem;
+    width: 30rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    
+    align-self: flex-start; /* Keep it at the start */
+}
+
+
+.profileCard:hover {
+    transform: scale(1.05);
+}
+
+.profileCard img {
+    height: 180px;
+    width: 180px;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin-top: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profileCard img:hover {
+    transform: scale(1.1);
+}
+
+.profileCard h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.profileCard p {
+    font-size: 1rem;
+    color: #ddd;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+.profileButton {
+    background: linear-gradient(45deg, #ae2ef9, #ff4b2b);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.profileButton:hover {
+    background: linear-gradient(45deg, #ae2ef9, #ff416c);
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 15px rgba(255, 65, 108, 0.4);
+}
