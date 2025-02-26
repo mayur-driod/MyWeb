@@ -21,14 +21,14 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className='Choose' style={{ backgroundImage: `url(${mainPhoto})` }}>
+      <div id="home" className='Choose' style={{ backgroundImage: `url(${mainPhoto})` }}>
         <Toggle 
           checked={user}
           onChange={() => setUser((prev) => !prev)}
         />
       </div>
 
-      <div id="home">{handleModule()}</div>
+      <div >{handleModule()}</div>
 
       <hr />
 

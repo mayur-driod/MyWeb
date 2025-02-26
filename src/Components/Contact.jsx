@@ -71,6 +71,7 @@ const Contact = () => {
               required
             />
           </div>
+
           <div className="form-group">
             <label htmlFor="email">Email:</label>
             <input
@@ -82,6 +83,18 @@ const Contact = () => {
               required
             />
           </div>
+
+          <div className="form-group">
+            <label htmlFor="organization">Organization:</label>
+            <input
+              type="text"
+              id="organization"
+              name="organization"
+              value={formData.organization}
+              onChange={handleChange}
+            />
+          </div>
+
           <div className="form-group">
             <label htmlFor="subject">Subject:</label>
             <input
@@ -93,16 +106,7 @@ const Contact = () => {
               required
             />
           </div>
-          <div className="form-group">
-            <label htmlFor="organization">Organization:</label>
-            <input
-              type="text"
-              id="organization"
-              name="organization"
-              value={formData.organization}
-              onChange={handleChange}
-            />
-          </div>
+
           <div className="form-group">
             <label htmlFor="message">Message:</label>
             <textarea
@@ -115,6 +119,7 @@ const Contact = () => {
           </div>
           <button type="submit">Send</button>
         </form>
+        
         {status && <p>{status}</p>}
       </div>
     </div>
