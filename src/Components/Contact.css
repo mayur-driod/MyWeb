@@ -84,7 +84,7 @@
 button[type="submit"] {
   width: 100%;
   padding: 0.8rem;
-  background-color: #ae2ef9;
+  background: linear-gradient(45deg, #ae2ef9, #ff4b2b);
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -94,7 +94,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #7300b6;
+  background: linear-gradient(45deg, #ae2ef9, #ff416c);
   box-shadow: 0 4px 10px rgba(120, 0, 189, 0.6);
 }
 
