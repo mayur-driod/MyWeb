@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
+import { useEffect, useRef } from 'react';
 import "./abt.css";
 
 function About() {
@@ -13,7 +14,7 @@ function About() {
             // Add typewriter animation dynamically
             const element = entry.target;
             element.style.animation =
-              "typing 2s steps(40, end)", "blink 0.8s steps(40,end)";
+              "typing 2s steps(40, end), blink 0.8s steps(40,end)";
           } else {
             // Reset animation when leaving the viewport
             const element = entry.target;
@@ -37,122 +38,22 @@ function About() {
     };
   }, []);
 
-  useEffect(() => {
-    // Add the LinkedIn badge script to the DOM
-    const script = document.createElement("script");
-    script.src = "https://platform.linkedin.com/badges/js/profile.js";
-    script.async = true;
-    script.defer = true;
-    script.type = "text/javascript";
-    document.body.appendChild(script);
-
-    // Cleanup the script when the component is unmounted
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
-      <div id="badge">
-        <div
-          className="badge-base LI-profile-badge"
-          data-locale="en_US"
-          data-size="large"
-          data-theme="dark"
-          data-type="HORIZONTAL"
-          data-vanity="mayurksetty"
-          data-version="v1"
-        >
-          <a
-            className="badge-base__link LI-simple-link"
-            href="https://in.linkedin.com/in/mayurksetty?trk=profile-badge"
-          ></a>
-        </div>
-
-        <div>
-          {/* Typewriter animation target */}
-          <h1 ref={typewriterRef}>Hey, I am Mayur</h1>
-          <p>
-            I am Mayur and I have two main interests in life. First one is Software and Computers,
-            while the other is Photography. I wanted to showcase my knowledge and skills in both
-            these aspects, so I created this webpage. This webpage is designed in such a way that
-            when you toggle the button to software, it shows everything about my journey with
-            software and computers, and when I toggle it to Photography, it shows me everything
-            about Photography.
-          </p>
-        </div>
+      <div>
+        {/* Typewriter animation target */}
+        <h1 ref={typewriterRef}>Hey, I am Mayur</h1>
+        <p>
+          I am Mayur and I have two main interests in life. First one is Software and Computers,
+          while the other is Photography. I wanted to showcase my knowledge and skills in both
+          these aspects, so I created this webpage. This webpage is designed in such a way that
+          when you toggle the button to software, it shows everything about my journey with
+          software and computers, and when I toggle it to Photography, it shows me everything
+          about Photography.
+        </p>
       </div>
     </>
   );
 }
 
 export default About;
-
-
-
-
-
-
-
-
-
-// import React, { useEffect } from 'react';
-// import './abt.css';
-
-
-// function About() {
-//   useEffect(() => {
-//     // Add the LinkedIn badge script to the DOM
-//     const script = document.createElement('script');
-//     script.src = "https://platform.linkedin.com/badges/js/profile.js";
-//     script.async = true;
-//     script.defer = true;
-//     script.type = "text/javascript";
-//     document.body.appendChild(script);
-
-//     // Cleanup the script when the component is unmounted
-//     return () => {
-//       document.body.removeChild(script);
-//     };
-//   }, []);
-
-//   return (
-//     <>
-//       {/* LinkedIn Badge */}
-//       <div id='badge'>
-//       <div
-//         className="badge-base LI-profile-badge"
-//         data-locale="en_US"
-//         data-size="large"
-//         data-theme="dark"
-//         data-type="HORIZONTAL"
-//         data-vanity="mayurksetty"
-//         data-version="v1"
-//       >
-//         <a
-//           className="badge-base__link LI-simple-link"
-//           href="https://in.linkedin.com/in/mayurksetty?trk=profile-badge"
-//         >
-//           {/* Mayur K Setty */}
-//         </a>
-//       </div>
-
-//       <div>
-//       <h1>Hey, I am Mayur</h1>
-//       <p>
-//         I am Mayur and I have two main interests in life. First one is Software and Computers, 
-//         while the other is Photography. I wanted to showcase my knowledge and skills in both 
-//         these aspects, so I created this webpage. This webpage is designed in such a way that 
-//         when you toggle the button to software, it shows everything about my journey with software 
-//         and computers, and when I toggle it to Photography, it shows me everything about Photography.
-//       </p>
-//       </div>
-
-//       </div>
-//       <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet" />
-//     </>
-//   );
-// }
-
-// export default About;
