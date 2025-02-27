@@ -27,15 +27,26 @@ import profile from '../assets/IMG_3332~2.jpg';
 import './profile.css';
 
 function Profilecard() {
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop - 50, // Adjust for navbar height
+        behavior: 'smooth',
+      });
+    }
+  }
+  
   return (
     <div className='profileCard'>
-      <img src={profile} alt="Mayur's Profile" />
+      <img src={profile} alt="Mayur's Profile" onClick={window.open("https://www.linkedin.com/in/mayurksetty")} />
       <h2>I am <strong>Mayur</strong></h2>
       <p>
         Hey folks! I am Mayur K Setty, a dedicated student at <strong>RVU x Kalvium</strong> pursuing my 
         <strong> BCA (Hons) in Software Product Engineering</strong>.
       </p>
-      <button className="profileButton">Check out more!</button>
+      <button className="profileButton" onClick={() => scrollToSection('about')}>Check out more!</button>
     </div>      
   );
 }
