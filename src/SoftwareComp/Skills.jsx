@@ -32,21 +32,21 @@ function Skills() {
         </div>
         {/* <p id='skillpara'>Other Skills</p> */}<br/>
         <div className='OtherSkills'>
-            <img className='ot' src={html}/>
-            <img className='ot' src={css}/>
-            <img className='ot' src={Java}/>
-            <img className='ot' src={vite}/>
-            <img className='ot' src={redux}/>
-            <img className='ot' src={arduino}/>
-            <img className='ot' src={davinci}/>
-            <img className='ot' src={RPI}/> 
-            <img className='ot' src={Cpp}/>
-            <img className='ot' src={nodejs}/>
-            <img className='ot' src={photoshop}/>
-            <img className='ot' src={lightroom}/>
-            <img className='ot' src={illustrator}/>
-            <img className='ot' src={figma}/>
-            <img className='ot' src={linux}/>
+            <img className='ot' onClick={() => window.open("https://www.w3schools.com/html/default.asp")}src={html}/>
+            <img className='ot' onClick={() => window.open("https://www.w3schools.com/Css/")}  src={css}/>
+            <img className='ot' onClick={() => window.open("https://www.java.com/en/")}  src={Java}/>
+            <img className='ot' onClick={() => window.open("https://vite.dev/")}  src={vite}/>
+            <img className='ot' onClick={() => window.open("https://redux.js.org/")}  src={redux}/>
+            <img className='ot' onClick={() => window.open("https://www.arduino.cc/")}  src={arduino}/>
+            <img className='ot' onClick={() => window.open("https://www.blackmagicdesign.com/in/products/davinciresolve")}  src={davinci}/>
+            <img className='ot' onClick={() => window.open("https://www.raspberrypi.com/")}  src={RPI}/> 
+            <img className='ot' onClick={() => window.open("https://devdocs.io/cpp/")}  src={Cpp}/>
+            <img className='ot' onClick={() => window.open("https://nodejs.org/en")}  src={nodejs}/>
+            <img className='ot' onClick={() => window.open("https://www.adobe.com/in/products/photoshop.html")}  src={photoshop}/>
+            <img className='ot' onClick={() => window.open("https://lightroom.adobe.com/")}  src={lightroom}/>
+            <img className='ot' onClick={() => window.open("https://www.adobe.com/in/products/illustrator.html")}  src={illustrator}/>
+            <img className='ot' onClick={() => window.open("https://www.figma.com/")}  src={figma}/>
+            <img className='ot' onClick={() => window.open("https://www.linux.org/")}  src={linux}/>
         </div>
     </div>
   )
