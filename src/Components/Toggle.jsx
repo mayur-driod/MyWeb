@@ -1,5 +1,5 @@
 import React from 'react';
-import './slider.css'; // Ensure the CSS for `switch` is imported
+import './slider.css';
 
 function Toggle({ checked, onChange }) {
   return (

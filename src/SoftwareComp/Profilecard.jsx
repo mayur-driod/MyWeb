@@ -37,10 +37,10 @@ function Profilecard() {
       });
     }
   }
-  
+
   return (
     <div className='profileCard'>
-      <img src={profile} alt="Mayur's Profile" onClick={window.open("https://www.linkedin.com/in/mayurksetty")} />
+      <img src={profile} alt="Mayur's Profile" onClick={() => window.open("https://www.linkedin.com/in/mayurksetty")} />
       <h2>I am <strong>Mayur</strong></h2>
       <p>
         Hey folks! I am Mayur K Setty, a dedicated student at <strong>RVU x Kalvium</strong> pursuing my 

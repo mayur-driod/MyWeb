@@ -12,7 +12,6 @@ import { authcontext } from './context api/photoContext';
 
 function App() {
   const { user, setUser } = useContext(authcontext);
-  console.log(setUser);
 
   const handleModule = () => {
     return user ? <Photography /> : <Software />;
@@ -28,7 +27,7 @@ function App() {
         />
       </div>
 
-      <div >{handleModule()}</div>
+      <div>{handleModule()}</div>
 
       <hr />
 
