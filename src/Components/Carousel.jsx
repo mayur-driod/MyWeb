@@ -29,8 +29,8 @@ import ninteen from '../assets/Carousel/19.jpg';
 import twenty from '../assets/Carousel/20.jpg';
 import twentyone from '../assets/Carousel/21.jpg';
 import twentytwo from '../assets/Carousel/22.JPG';
-import twentythree from '../assets/Carousel/23.JPG';
-import twentyfour from '../assets/Carousel/24.JPG';
+import twentythree from '../assets/Carousel/23.jpg';
+import twentyfour from '../assets/Carousel/24.jpg';
 
 
 const settings = {
