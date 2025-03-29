@@ -1,8 +1,50 @@
-# MyWebPage
- Still a work in progress... A Vite x React project for me to enhance my React skills
- -
- I have always wanted to create a portfolio, so this is one step towards achieving that goal.
- This page is purely built on React so I can integrate the functionality of the page very easily.
+# 🚀 MyWebPage  
 
+> **Still a Work in Progress...**  
+A **Vite x React** project to enhance my React skills while building something meaningful.  
 
- This page mainly focuses on two of my main interests which are photography and software. So I have integrated a toggle button that allows users to switch between the two and view both of my passions.
+---
+
+## 🎯 About the Project  
+
+I’ve always wanted to create a **personal portfolio**, and this project is a step towards achieving that goal.  
+
+This webpage is built entirely with **React**, allowing me to seamlessly integrate functionality and interactive elements.  
+
+### 🔥 Features  
+
+- 🖼 **Photography & Software Showcase** – A toggle button lets users switch between my two passions.  
+- ⚡ **Fast & Optimized** – Leveraging Vite for lightning-fast builds and performance.  
+- 🎨 **Modern UI** – Clean and minimalistic design for a smooth user experience.  
+- 🌐 **Live Deployment** – Hosted on **Netlify** for easy access.  
+
+---
+
+## 🚀 Live Preview  
+
+🔗 [MyWebPage](https://mayurksetty.netlify.app)  
+
+---
+
+## 🛠 Tech Stack  
+
+- **Frontend**: React + Vite  
+- **Styling**: CSS
+- **Deployment**: Netlify  
+
+---
+
+## 📌 To-Do List  
+
+- [ ] Improve UI/UX design  
+- [ ] Add animations for smoother transitions  
+- [ ] Enhance mobile responsiveness  
+- [ ] Implement a contact form  
+
+---
+
+## 📷 Sneak Peek
+
+![Main page](MainPage.png)
+
+Feel free to check out the **live demo** and let me know what you think! 🚀  
