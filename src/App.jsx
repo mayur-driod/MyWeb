@@ -9,6 +9,7 @@ import mainPhoto from './assets/main pic redo.png';
 import Contact from './Components/Contact';
 import About from './Components/About';
 import { authcontext } from './context api/photoContext';
+import Experience from './Components/Experience';
 
 function App() {
   const { user, setUser } = useContext(authcontext);
@@ -33,6 +34,8 @@ function App() {
 
       <div id="about"><About /></div>
 
+      <hr />
+        <div id='experience'><Experience/></div>
       <hr />
 
       <div id="contact"><Contact /></div>
