@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useRef } from 'react';
 import "./abt.css";
-import LinkedInBadge from "./LinkedInBadge";
+// import LinkedInBadge from "./LinkedInBadge";
 
 function About() {
   const typewriterRef = useRef(null);

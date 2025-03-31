@@ -1,7 +1,9 @@
 import React from 'react';
 import './edu.css';
-import KRVU from '../assets/Kalvium_RVU.png'
-import CFL from '../assets/CFL.png';
+import KRVU from '../assets/edu/Kalvium_RVU.png'
+import CFL from '../assets/edu/CFL.png';
+
+import KImage from '../assets/edu/IMG-20241114-WA0071.jpg';
 
 const experienceData = [
   {
@@ -9,7 +11,8 @@ const experienceData = [
     companyLogo: KRVU,
     duration: 'Aug 2024 - Present',
     description: 'Kalvium x RVU’s 4-year BCA course in Software Product Engineering is a pioneering undergraduate program that bridges rigorous academic theory with intensive, real-world experience. Designed by top industry leaders, the curriculum is continuously updated to reflect emerging technologies and market demands.',
-    anchor:{link:"https://kalvium.com/rv-university-bengaluru-kalvium/",text:"Kalvium x RVU"}
+    anchor:{link:"https://kalvium.com/rv-university-bengaluru-kalvium/",text:"Kalvium x RVU"},
+    images:KImage
   },
   {
     title:'Primary education',
