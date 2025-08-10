@@ -63,12 +63,34 @@ border-radius: 8px;
   height: 100vh; 
 
   /* Ensure the background image covers the entire container */
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat; 
+  background-size: contain !important; /* force contain */
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #242424; /* fallback color for letterboxing */
+}
 
-  p {
-    font-size: 20px;
-    color: grey;
+@media (max-width: 640px) {
+  .Choose {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60vh;
+    padding: 1rem 0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .Choose {
+    flex-direction: row;
+    height: 80vh;
+    padding: 1.5rem 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Choose {
+    flex-direction: row;
+    height: 100vh;
+    padding: 2rem 0;
   }
 }

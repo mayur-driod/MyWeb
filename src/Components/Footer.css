@@ -3,47 +3,92 @@
     background-color: #333; /* Dark background for professional look */
     color: #f2f2f2; /* Light text color for contrast */
     text-align: center;
-    padding: 20px 10px;
+    padding: 1.25rem 0.6rem;
     font-family: 'Arial', sans-serif;
     border-top: 2px solid #444;
     width: 100vw;
-    position: absolute;
-    left: 0rem;
-  }
-  
-  .footer-content {
+    position: relative;
+    left: 0;
+}
+
+.footer-content {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-  }
-  
-  /* Styling for text */
-  .footer-content p {
+    gap: 0.6rem;
+}
+
+/* Styling for text */
+.footer-content p {
     margin: 0;
-    font-size: 14px;
-  }
-  
-  /* Social icons container */
-  .social-icons {
+    font-size: 0.9rem;
+}
+
+/* Social icons container */
+.social-icons {
     display: flex;
-    gap: 15px; /* Space between icons */
-  }
-  
-  /* Icon links styling */
-  .social-icons a {
+    gap: 1rem; /* Space between icons */
+}
+
+/* Icon links styling */
+.social-icons a {
     color: #f2f2f2;
-    font-size: 20px; /* Icon size */
+    font-size: 1.3rem; /* Icon size */
     transition: color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
+}
+
+.social-icons a:hover {
     color: #c4e510; /* Highlight color on hover */
-  }
-  
-  .social-icons a:active {
+}
+
+.social-icons a:active {
     transform: scale(0.9); /* Slight shrinking effect on click */
-  }
-  
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+    .footer-content {
+        gap: 0.3rem;
+    }
+    .footer-content p {
+        font-size: 0.8rem;
+    }
+    .social-icons a {
+        font-size: 1.1rem;
+    }
+    .footer {
+        padding: 0.8rem 0.2rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .footer-content {
+        gap: 0.5rem;
+    }
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+    .footer {
+        padding: 1rem 0.4rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .footer-content {
+        gap: 0.6rem;
+    }
+    .footer-content p {
+        font-size: 1rem;
+    }
+    .social-icons a {
+        font-size: 1.3rem;
+    }
+    .footer {
+        padding: 1.25rem 0.6rem;
+    }
+}

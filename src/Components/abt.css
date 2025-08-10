@@ -1,19 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
 .maindiv{
-  width: auto;
-  height: auto;
+  width: 100vw;
+  min-height: 40vh;
+  padding: 1rem 0;
 }
 
 h1 {
   font-family: 'Jersey 15', sans-serif; 
   text-align: left;
-  margin-left: 4%;
+  margin-left: 4vw;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #FFF; /* Cursor */
-  width: 28; 
+  width: 28vw;
   animation: none;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+/* Only show cursor and blink while typing */
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background: #fff;
+  margin-left: 2px;
+  vertical-align: bottom;
+  animation: blink 0.8s steps(40, end) infinite;
 }
 
 
@@ -37,15 +50,37 @@ h1 {
 }
 
 p {
-  margin-left: 4.8%;
-  margin-right: 5%;
+  margin-left: 4.8vw;
+  margin-right: 5vw;
   text-align: left;
+  font-size: 1.1rem;
 }
 
-/* #badge {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 1%;
-} */
+@media (max-width: 640px) {
+  .maindiv {
+    padding: 0.5rem 0;
+  }
+  h1 {
+    font-size: 1.2rem;
+    width: 70vw;
+    margin-left: 2vw;
+  }
+  p {
+    font-size: 0.95rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.7rem;
+    width: 40vw;
+    margin-left: 3vw;
+  }
+  p {
+    font-size: 1rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+}

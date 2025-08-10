@@ -19,36 +19,49 @@ import illustrator from '../assets/Illustrator.png'
 import figma from '../assets/Figma.png'
 import nodejs from '../assets/Node js.png'
 
+function Skills({ fullHeight }) {
+  const otherSkills = [
+    { src: html, link: "https://www.w3schools.com/html/default.asp", alt: "HTML" },
+    { src: css, link: "https://www.w3schools.com/Css/", alt: "CSS" },
+    { src: Java, link: "https://www.java.com/en/", alt: "Java" },
+    { src: vite, link: "https://vite.dev/", alt: "Vite.js" },
+    { src: redux, link: "https://redux.js.org/", alt: "Redux" },
+    { src: arduino, link: "https://www.arduino.cc/", alt: "Arduino" },
+    { src: davinci, link: "https://www.blackmagicdesign.com/in/products/davinciresolve", alt: "DaVinci Resolve" },
+    { src: RPI, link: "https://www.raspberrypi.com/", alt: "Raspberry Pi" },
+    { src: Cpp, link: "https://devdocs.io/cpp/", alt: "C++" },
+    { src: nodejs, link: "https://nodejs.org/en", alt: "Node.js" },
+    { src: photoshop, link: "https://www.adobe.com/in/products/photoshop.html", alt: "Photoshop" },
+    { src: lightroom, link: "https://lightroom.adobe.com/", alt: "Lightroom" },
+    { src: illustrator, link: "https://www.adobe.com/in/products/illustrator.html", alt: "Illustrator" },
+    { src: figma, link: "https://www.figma.com/", alt: "Figma" },
+    { src: linux, link: "https://www.linux.org/", alt: "Linux" },
+  ];
 
-
-function Skills() {
   return (
-    <div className='MainDiv'>
-        <h2>My Skills</h2>
-        <div className='TopDiv'>
-            <img className='top3' src={Python}/>
-            <img className='top3' src={react}/>
-            <img className='top3' src={JS}/>
-        </div>
-        {/* <p id='skillpara'>Other Skills</p> */}<br/>
-        <div className='OtherSkills'>
-            <img className='ot' onClick={() => window.open("https://www.w3schools.com/html/default.asp")}src={html}/>
-            <img className='ot' onClick={() => window.open("https://www.w3schools.com/Css/")}  src={css}/>
-            <img className='ot' onClick={() => window.open("https://www.java.com/en/")}  src={Java}/>
-            <img className='ot' onClick={() => window.open("https://vite.dev/")}  src={vite}/>
-            <img className='ot' onClick={() => window.open("https://redux.js.org/")}  src={redux}/>
-            <img className='ot' onClick={() => window.open("https://www.arduino.cc/")}  src={arduino}/>
-            <img className='ot' onClick={() => window.open("https://www.blackmagicdesign.com/in/products/davinciresolve")}  src={davinci}/>
-            <img className='ot' onClick={() => window.open("https://www.raspberrypi.com/")}  src={RPI}/> 
-            <img className='ot' onClick={() => window.open("https://devdocs.io/cpp/")}  src={Cpp}/>
-            <img className='ot' onClick={() => window.open("https://nodejs.org/en")}  src={nodejs}/>
-            <img className='ot' onClick={() => window.open("https://www.adobe.com/in/products/photoshop.html")}  src={photoshop}/>
-            <img className='ot' onClick={() => window.open("https://lightroom.adobe.com/")}  src={lightroom}/>
-            <img className='ot' onClick={() => window.open("https://www.adobe.com/in/products/illustrator.html")}  src={illustrator}/>
-            <img className='ot' onClick={() => window.open("https://www.figma.com/")}  src={figma}/>
-            <img className='ot' onClick={() => window.open("https://www.linux.org/")}  src={linux}/>
-        </div>
-    </div>
+    <section className={`MainDiv${fullHeight ? ' fullHeight' : ''}`} aria-labelledby="skills-heading">
+      <h2 id="skills-heading">My Skills</h2>
+      <div className='TopDiv'>
+        <img className='top3' src={Python} alt="Python" />
+        <img className='top3' src={react} alt="React.js" />
+        <img className='top3' src={JS} alt="JavaScript" />
+      </div>
+      <br />
+      <div className='OtherSkills' role="list">
+        {otherSkills.map((skill, idx) => (
+          <button
+            key={skill.alt}
+            className="ot"
+            onClick={() => window.open(skill.link)}
+            aria-label={skill.alt}
+            tabIndex={0}
+            style={{ background: "none", border: "none", padding: 0, cursor: "pointer" }}
+          >
+            <img src={skill.src} alt={skill.alt} style={{ width: "100%", height: "100%" }} />
+          </button>
+        ))}
+      </div>
+    </section>
   )
 }
 

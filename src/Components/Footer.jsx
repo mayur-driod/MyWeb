@@ -1,18 +1,19 @@
 import React from 'react';
-import './Footer.css'; // Ensure to create and link this CSS file
-import { FaInstagram, FaLinkedin,FaGithub } from 'react-icons/fa'; // Using react-icons
+import './Footer.css';
+import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" role="contentinfo">
       <div className="footer-content">
         <p>© 2025 Mayur K Setty. All rights reserved.</p>
-        <div className="social-icons">
+        <nav className="social-icons" aria-label="Social media links">
           <a
             href="https://www.instagram.com/mayurksetty.photography"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
+            tabIndex={0}
           >
             <FaInstagram />
           </a>
@@ -21,6 +22,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
+            tabIndex={0}
           >
             <FaLinkedin />
           </a>
@@ -28,11 +30,12 @@ function Footer() {
             href="https://github.com/mayur-driod"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn"
+            aria-label="GitHub"
+            tabIndex={0}
           >
             <FaGithub />
           </a>
-        </div>
+        </nav>
       </div>
     </footer>
   );

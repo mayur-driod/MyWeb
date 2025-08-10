@@ -6,14 +6,16 @@ import './SP.css';
 
 function Software() {
   return (
-    <div className='Maindiv' 
-    style={{ backgroundImage: `url(${photo})` }}
+    <section
+      className='Maindiv'
+      style={{ backgroundImage: `url(${photo})` }}
+      aria-label="Software Section"
     >
-      <div className="content-container">
-        <Profilecard />
-        <Skills />
+      <div className="content-container" style={{ alignItems: 'stretch', minHeight: '60vh' }}>
+        <Profilecard fullHeight />
+        <Skills fullHeight />
       </div>
-    </div>
+    </section>
   );
 }
 

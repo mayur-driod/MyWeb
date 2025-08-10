@@ -28,10 +28,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.2em;
   line-height: 1.1;
 }
 
@@ -65,3 +67,30 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }}
+
+@media (max-width: 640px) {
+  #root {
+    font-size: 0.95rem;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  #root {
+    font-size: 1.05rem;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+}
+
+@media (min-width: 1025px) {
+  #root {
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 2.2em;
+  }
+}

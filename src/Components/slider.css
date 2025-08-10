@@ -3,11 +3,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 120px; /* Doubled from 60px */
-  height: 68px; /* Doubled from 34px */
-  position: absolute;
-  /* top: 28rem;
-  left: 56rem; */
+  width: 7.5rem;
+  height: 4.25rem;
   margin-top: 5%;
   margin-left: 4%;
 }
@@ -37,16 +34,16 @@
   background-color: #ae2ef9;
   -webkit-transition: .4s;
   transition: .4s;
-  border-radius: 68px; /* Adjust for rounded look */
+  border-radius: 4.25rem;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 52px; /* Doubled from 26px */
-  width: 52px; /* Doubled from 26px */
-  left: 8px; /* Adjusted for doubling */
-  bottom: 8px; /* Adjusted for doubling */
+  height: 3.25rem;
+  width: 3.25rem;
+  left: 0.5rem;
+  bottom: 0.5rem;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -58,16 +55,47 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 2px #82a72f; /* Slightly larger for focus effect */
+  box-shadow: 0 0 2px #82a72f;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(52px); /* Doubled from 26px */
-  -ms-transform: translateX(52px); /* Doubled from 26px */
-  transform: translateX(52px); /* Doubled from 26px */
+  -webkit-transform: translateX(3.25rem);
+  -ms-transform: translateX(3.25rem);
+  transform: translateX(3.25rem);
 }
 
-/* Rounded sliders */
 .slider.round {
-  border-radius: 68px; /* Match height for a fully rounded slider */
+  border-radius: 4.25rem;
+}
+
+@media (max-width: 640px) {
+  .switch {
+    width: 4.5rem;
+    height: 2.5rem;
+  }
+  .slider:before {
+    height: 1.7rem;
+    width: 1.7rem;
+    left: 0.3rem;
+    bottom: 0.3rem;
+  }
+  input:checked + .slider:before {
+    transform: translateX(1.7rem);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .switch {
+    width: 6rem;
+    height: 3.5rem;
+  }
+  .slider:before {
+    height: 2.5rem;
+    width: 2.5rem;
+    left: 0.4rem;
+    bottom: 0.4rem;
+  }
+  input:checked + .slider:before {
+    transform: translateX(2.5rem);
+  }
 }

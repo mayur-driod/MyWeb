@@ -1,56 +1,148 @@
 .Mainpic{
     width: 100%;
-    height: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
 .Maindiv{
-    margin: 50px;
-    width: 80rem;
-    height: 60rem;
-    background-size:cover;
+    margin: 3vw;
+    width: 95vw;
+    max-width: 80rem;
+    min-height: 60vh;
+    background-size: contain; /* changed from cover to contain */
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .profileDiv{
-    margin-left: 50px;
+    margin-left: 2vw;
     background-color: rgba(50,50,50,0.7);
-    height: 40rem;
-    width: 35rem;
+    min-height: 24rem;
+    width: 90vw;
+    max-width: 35rem;
     border-radius: 5px;
     display: flex;
     align-self: flex-start;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    img{
-        height: 200px;
-        width: 200px;
-        border: 3px white solid;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        /* margin-left: 40px; */
-        align-self: center;
-    }
+}
+.profileDiv img{
+    height: 8rem;
+    width: 8rem;
+    border: 3px white solid;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-self: center;
+    object-fit: cover;
+    max-width: 100%;
 }
 
 h2{
-    margin-bottom: 10px;
-    font-size: 20pt;
+    margin-bottom: 0.6rem;
+    font-size: 1.25rem;
 }
 
 h1{
     background: -webkit-linear-gradient(#ae2ef9, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding: 10px;
+    padding: 0.6rem;
 }
 
 p{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 640px) {
+    .Maindiv {
+        margin: 1vw;
+        width: 99vw;
+        padding-bottom: 1rem;
+    }
+    .profileDiv {
+        width: 98vw;
+        min-height: 16rem;
+        margin-left: 0;
+        padding: 0.5rem;
+    }
+    .profileDiv img {
+        height: 5rem;
+        width: 5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+        padding: 0.4rem;
+    }
+    p {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .Maindiv {
+        margin: 2vw;
+        width: 97vw;
+        padding-bottom: 1.5rem;
+    }
+    .profileDiv {
+        width: 90vw;
+        min-height: 20rem;
+        margin-left: 1vw;
+        padding: 1rem;
+    }
+    .profileDiv img {
+        height: 6rem;
+        width: 6rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    h1 {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .Maindiv {
+        margin: 3vw;
+        width: 95vw;
+        padding-bottom: 2rem;
+    }
+    .profileDiv {
+        width: 35rem;
+        min-height: 24rem;
+        margin-left: 2vw;
+        padding: 1.5rem;
+    }
+    .profileDiv img {
+        height: 8rem;
+        width: 8rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+        padding: 0.6rem;
+    }
 }

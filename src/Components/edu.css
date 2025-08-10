@@ -7,66 +7,120 @@
 }
 
 .experience-page {
+    width: 95vw;
     max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 2rem auto;
+    padding: 1.5rem;
     background-color: #a3a3a3;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 10em;
-  }
-  
-  .experience-list {
+}
+
+.experience-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-  }
-  
-  .experience-item {
+    gap: 1.2rem;
+}
+
+.experience-item {
     background-color: white;
-    padding: 20px;
+    padding: 1.2rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .experience-item:hover {
+}
+
+.experience-item:hover {
     transform: translateY(-5px);
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 1.4rem;
     color: #4d4e4f;
     margin-bottom: 5px;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-size: 1.2rem;
     color: #555;
     margin-bottom: 5px;
-  }
-  
-  .duration {
+}
+
+.duration {
     font-style: italic;
     color: #777;
-  }
-  
-  .description {
+}
+
+.description {
     margin-top: 10px;
     color: #444;
     line-height: 1.5;
-  }
+}
 
-  .company-logo{
-    width: 20em;
+.company-logo{
+    width: 12rem;
+    max-width: 40vw;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
-  }
+    margin-bottom: 0.7rem;
+}
 
-  .company{
+.company{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
+    gap: 1rem;
+}
+
+@media (max-width: 640px) {
+    .experience-page {
+        width: 99vw;
+        padding: 0.7rem;
+        margin: 1rem auto;
+    }
+    .company {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .company-logo {
+        width: 7rem;
+        max-width: 80vw;
+        margin-bottom: 0.5rem;
+    }
+    .experience-item {
+        padding: 0.7rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .experience-page {
+        width: 98vw;
+        padding: 1rem;
+        margin: 1.5rem auto;
+    }
+    .company-logo {
+        width: 10rem;
+        max-width: 50vw;
+    }
+    .experience-item {
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .experience-page {
+        width: 95vw;
+        max-width: 800px;
+        padding: 1.5rem;
+        margin: 2rem auto;
+    }
+    .company-logo {
+        width: 12rem;
+        max-width: 40vw;
+    }
+    .experience-item {
+        padding: 1.2rem;
+    }
+}

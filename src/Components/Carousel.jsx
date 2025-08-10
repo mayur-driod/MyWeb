@@ -47,21 +47,36 @@ const settings = {
 };
 
 export default function Carousel() {
-  const images = [one, two, three, four,five,six,seven,eight,nine,ten,eleven,twelve,thirteen,fourteen,fifteen,sixteen,seventeen,eighteen,ninteen,twenty,twentyone,twentytwo,twentythree,twentyfour];
+  const images = [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, ninteen, twenty, twentyone, twentytwo, twentythree, twentyfour];
 
   return (
-    <div style={{ width: "100%", maxWidth: "70vw", margin: "auto", position: "relative" }}>
+    <section
+      aria-label="Photography Carousel"
+      style={{
+        width: "100%",
+        maxWidth: "90vw",
+        margin: "auto",
+        position: "relative",
+        padding: "1rem 0"
+      }}
+    >
       <Slider {...settings}>
         {images.map((image, index) => (
           <Box key={index}>
             <img
               src={image}
-              alt={`Photo ${index + 1}`}
-              style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+              alt={`Photography sample ${index + 1}`}
+              style={{
+                width: "100%",
+                height: "auto",
+                maxHeight: "60vh",
+                borderRadius: "8px",
+                objectFit: "contain"
+              }}
             />
           </Box>
         ))}
       </Slider>
-    </div>
+    </section>
   );
 }
